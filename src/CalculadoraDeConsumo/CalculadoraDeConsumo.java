@@ -12,7 +12,7 @@
 			double x = 0;
 			double y = 0;
 			double z = 0;
-			DecimalFormat decimalFormat = new DecimalFormat("#.00");
+			DecimalFormat decimalFormat = new DecimalFormat("0.##");
 			
 			System.out.println("Calculadora de Consumo de Combustível");
 			System.out.println("--------------------------------------");
@@ -44,10 +44,8 @@
 				break;	
 			}
 			
-			
-			
 			int paradasNecessarias = (int) Math.ceil(z);
-
+			
 			System.out.println("Cálculo de Consumo");
 			System.out.println("-------------------");
 			System.out.println("Litros de combustível necessários: " + decimalFormat.format(x) + " litros");
